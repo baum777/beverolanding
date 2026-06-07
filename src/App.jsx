@@ -213,23 +213,23 @@ const screenshots = [
 const phaseCards = [
   {
     label: "Etappe 1",
-    title: "Ist-Zustand verkaufen",
-    text: "Die aktuelle Webapp ist als Cockpit für Dashboard, Bestand, Bar-Refill, Bewegungen, Quick Notes, Team und Rollen sichtbar. Diese Screens bilden den Proof für den ersten Pilot.",
+    title: "Was schon sichtbar ist",
+    text: "Siebzehn Desktop-Screens. Sechs Mobile-Screens. Kein Mockup, kein Folien-Versprechen — was läuft, ist hier vergrößerbar.",
   },
   {
     label: "Etappe 2",
-    title: "FoodNotify vorbereiten",
-    text: "Wareneingang, Artikelstamm und Bewegungslogik zeigen, wo FoodNotify-Bestellmails später einfließen: Import, Prüfung, Warenannahme und Bestandsbewegung.",
+    title: "Was als Nächstes einfließt",
+    text: "FoodNotify-Bestellmails. Die Struktur, in der sie landen werden, existiert bereits — sie wartet nur auf den Trigger.",
   },
   {
     label: "Etappe 3",
-    title: "Gastronovi anbinden",
-    text: "Artikel, Bestände und Bewegungen schaffen die Struktur, um Verkaufs-/Verbrauchsdaten aus Gastronovi später gegen Bestand und Refill-Qualität zu spiegeln.",
+    title: "Was die externe Wahrheit ergänzt",
+    text: "Gastronovi-Verbräuche. Der Bestand, gegen den sie sich spiegeln lassen, ist schon da. Was fehlt, ist nur die Pipeline.",
   },
   {
     label: "Skalierung",
-    title: "Weitere Standorte & Cube",
-    text: "Die Organisation kann später auf weitere Standorte erweitert werden. Cube kann als eigene Organisation geführt werden, wodurch ein vollständiger, sauber getrennter Datenpool entsteht.",
+    title: "Was möglich wird, wenn der Pilot steht",
+    text: "Mehrere Standorte. Eine eigene Organisation für Cube. Ein vollständig getrennter Datenpool — ohne Custom-Code.",
   },
 ];
 
@@ -279,13 +279,12 @@ export default function App() {
         <div className="heroCopy">
           <p className="eyebrow">Aktueller Webapp-Stand · echte Screenshots</p>
           <h1>
-            Bevero sichtbar verkaufen:
-            <span> der Ist-Zustand als Präsentationsseite.</span>
+            Was passiert,
+            <span> wenn die Demo wegfällt?</span>
           </h1>
           <p className="lead">
-            Diese Landingpage ersetzt die bisherigen abstrakten Mockups durch die hochgeladenen
-            Webapp-Screens. Jeder Screen zeigt kurz, welchen konkreten Nutzen die App heute
-            bereits vermittelt — von Dashboard und Bestand bis Bar-Refill, Mobile UX und Rollen.
+            Dreiundzwanzig echte Webapp-Screenshots. Klicken Sie sich durch. Vergrößern Sie,
+            was hängenbleibt. Was läuft, läuft — und ist hier einsehbar.
           </p>
 
           <div className="heroStats">
@@ -305,7 +304,7 @@ export default function App() {
         </div>
 
         <aside className="heroPreview">
-          <img src="/screenshots/screen-19-mobile-auffüllliste.png" alt="Mobile Auffüllliste Bar" />
+          <img src="/screenshots/screen-19-mobile-auff-llliste.png" alt="Mobile Auffüllliste Bar" />
           <div className="previewBadge">
             <span>Mobile-first</span>
             <b>Auffüllliste Bar</b>
@@ -315,25 +314,25 @@ export default function App() {
 
       <section className="truthStrip">
         <article>
-          <span>Was gezeigt wird</span>
-          <p>Echte Screenshots des aktuellen Cockpit-/Webapp-Zustands.</p>
+          <span>Was Sie hier sehen</span>
+          <p>Echte Screenshots. Gebaut auf dem, was heute im Repo liegt.</p>
         </article>
         <article>
-          <span>Was ersetzt wurde</span>
-          <p>Die bisherige Operations-Map-/Mockup-Erzählung wurde durch Screenshot-Erklärung ersetzt.</p>
+          <span>Was hier wegfällt</span>
+          <p>Folien, Mockups, Operations-Map. Alles nicht mehr nötig.</p>
         </article>
         <article>
-          <span>Wie es verkauft wird</span>
-          <p>Etappe 1 als sichtbarer Pilot, Etappe 2 FoodNotify, Etappe 3 Gastronovi.</p>
+          <span>Was als Nächstes zählt</span>
+          <p>Vier Etappen. Eine Richtung. Eine offene Frage pro Etappe.</p>
         </article>
       </section>
 
       <section className="sectionIntro" id="screens">
         <p className="eyebrow">Screenshot-Rundgang</p>
-        <h2>Die Page führt den Kunden durch das, was er tatsächlich erwarten kann.</h2>
+        <h2>Was zeigt man jemandem, der noch gar nicht fragt?</h2>
         <p>
-          Statt generischer Produktclaims zeigen die folgenden Karten konkrete Webapp-Flächen.
-          Jeder Screenshot ist anklickbar und kann für Präsentationen vergrößert werden.
+          Klicken Sie sich durch. Vergrößern Sie, was hängenbleibt. Die Reihenfolge ist
+          Einladung, nicht Pfad.
         </p>
       </section>
 
@@ -341,11 +340,11 @@ export default function App() {
         <div className="galleryHeader">
           <div>
             <p className="eyebrow">Desktop Cockpit</p>
-            <h2>Management, Inventar, Struktur und Einstellungen.</h2>
+            <h2>Siebzehn Flächen, die sonst niemand zu sehen bekommt.</h2>
           </div>
           <p>
-            Diese Screens eignen sich für CEO-/Admin-Perspektive: Überblick, Artikel,
-            Bestände, Bewegungen, Lagerorte, Alerts, Team und Rollen.
+            Cockpit, Inventar, Struktur, Einstellungen — der Pilot-Blick hinter die Kulissen.
+            Was der Admin sieht, wenn er sich umdreht.
           </p>
         </div>
 
@@ -360,11 +359,11 @@ export default function App() {
         <div className="galleryHeader">
           <div>
             <p className="eyebrow">Mobile Webapp</p>
-            <h2>Operative Nutzung im Service- und Bar-Alltag.</h2>
+            <h2>Sechs Bildschirme für Momente, in denen niemand am Schreibtisch sitzt.</h2>
           </div>
           <p>
-            Diese Screens zeigen, warum der mobile Teil für den Pilot wichtig ist:
-            schnell auffüllen, Bestand prüfen, Bewegungen sehen und Notizen erfassen.
+            Bar, Service, Küche. Mobile-first, weil der Alltag keinen Schreibtisch hat —
+            und der Pilot auch nicht.
           </p>
         </div>
 
@@ -377,11 +376,11 @@ export default function App() {
 
       <section className="phaseSection" id="phases">
         <div className="phaseIntro">
-          <p className="eyebrow">Verkaufslogik</p>
-          <h2>Aus den Screens entsteht eine klare Etappenstory.</h2>
+          <p className="eyebrow">Etappen-Logik</p>
+          <h2>Wie wird aus einer Bildersammlung eine Geschichte?</h2>
           <p>
-            Die Screens belegen den Ist-Zustand. FoodNotify und Gastronovi werden nicht
-            als fertige Screens behauptet, sondern als nachvollziehbare nächste Integrationsstufen.
+            Vier Etappen. Jede baut eine Annahme auf — bis aus Screens ein Versprechen wird,
+            das im Pilot trägt.
           </p>
         </div>
 
