@@ -523,6 +523,539 @@ h2 {
   line-height: 1;
 }
 
+/* ─── Tab Switcher ──────────────────────────────────────────────────────────── */
+
+.tabSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,250,241,0.5);
+}
+
+.tabBtn {
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13.5px;
+  font-weight: 850;
+  transition: background 180ms ease, color 180ms ease;
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  color: var(--ink);
+  background: rgba(29,37,33,0.06);
+}
+
+.tabBtn--active {
+  color: white;
+  background: var(--ink);
+}
+
+.tabBtn--active:hover {
+  color: white;
+  background: var(--ink);
+}
+
+/* ─── Phase 2/3 Tab ─────────────────────────────────────────────────────────── */
+
+.p23-tab {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Hero */
+.p23-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 28px;
+  padding: 52px 48px;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(255,250,241,0.98), rgba(255,243,223,0.94));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.p23-h1 {
+  max-width: 860px;
+  margin-bottom: 22px;
+  font-size: clamp(42px, 5.5vw, 80px);
+  line-height: 0.92;
+  letter-spacing: -0.075em;
+}
+
+.p23-h1 span {
+  color: var(--green);
+}
+
+.p23-lead {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.p23-heroStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.p23-heroStats div {
+  min-width: 130px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.52);
+}
+
+.p23-heroStats b,
+.p23-heroStats span {
+  display: block;
+}
+
+.p23-heroStats b {
+  color: var(--green);
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.p23-heroStats span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+/* Hero aside — profile teaser */
+.p23-heroAside {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-self: center;
+}
+
+.p23-asideCard {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.55);
+}
+
+.p23-asideCard p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.p23-asideConnector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.p23-asideLabel {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: white;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+}
+
+.motorworld-label { background: #cf8228; }
+.cube-label        { background: #2875b8; }
+
+/* Sections */
+.p23-section {
+  padding: 44px 48px;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(255,250,241,0.98), rgba(255,243,223,0.94));
+  box-shadow: var(--shadow);
+}
+
+.p23-altbg {
+  background: linear-gradient(180deg, rgba(236,246,240,0.97), rgba(218,238,228,0.93));
+}
+
+.p23-sHead {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(260px, 440px);
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+
+.p23-sHead h2 {
+  margin-bottom: 0;
+}
+
+.p23-sLead {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* SVG wrapper */
+.p23-svgWrap {
+  padding: 8px 0;
+  overflow-x: auto;
+}
+
+.p23-svg {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.p23-caption {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 780px;
+}
+
+/* Data Flow */
+.p23-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.p23-flowCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 24px 32px;
+  border: 1.5px solid var(--green);
+  border-radius: 20px;
+  background: rgba(20,107,63,0.06);
+  max-width: 340px;
+  width: 100%;
+}
+
+.p23-flowCenter strong {
+  font-size: 17px;
+  letter-spacing: -0.03em;
+  color: var(--green);
+}
+
+.p23-flowCenter span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.p23-flowIcon {
+  font-size: 24px;
+  color: var(--green);
+  line-height: 1;
+}
+
+.p23-flowDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.p23-flowLine {
+  width: 1.5px;
+  height: 14px;
+  background: var(--border);
+}
+
+.p23-flowHint {
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.p23-flowLeaves {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.p23-flowLeaf {
+  padding: 20px;
+  border-radius: 18px;
+  border: 1.5px solid var(--border);
+  background: rgba(255,255,255,0.55);
+}
+
+.p23-flowLeaf strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: -0.03em;
+}
+
+.p23-flowLeaf ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.p23-leafMW {
+  border-color: rgba(207,130,40,0.35);
+  background: rgba(207,130,40,0.05);
+}
+
+.p23-leafMW strong { color: #a56820; }
+
+.p23-leafCUBE {
+  border-color: rgba(40,117,184,0.35);
+  background: rgba(40,117,184,0.05);
+}
+
+.p23-leafCUBE strong { color: #1e5f96; }
+
+/* Profile Comparison */
+.p23-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.p23-profileCard {
+  padding: 28px;
+  border: 1.5px solid var(--pc, #ccc);
+  border-radius: 24px;
+  background: var(--pb, rgba(200,200,200,0.05));
+}
+
+.p23-profileHeader {
+  margin-bottom: 22px;
+}
+
+.p23-profileBadge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: white;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+}
+
+.p23-featureList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.p23-featureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+.pf-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.pf-on .pf-icon {
+  color: white;
+  background: var(--pc, var(--green));
+}
+
+.pf-off {
+  color: var(--muted);
+  opacity: 0.55;
+}
+
+.pf-off .pf-icon {
+  background: rgba(29,37,33,0.1);
+  color: var(--muted);
+}
+
+/* Use Cases */
+.p23-ucGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.p23-ucCard {
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(255,255,255,0.55);
+}
+
+.p23-uc-motorworld { border-left: 3px solid #cf8228; }
+.p23-uc-cube       { border-left: 3px solid #2875b8; }
+.p23-uc-management { border-left: 3px solid #146b3f; }
+
+.p23-ucTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.p23-ucNum {
+  font-size: 12px;
+  font-weight: 950;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+.p23-ucTag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  color: white;
+}
+
+.p23-uc-motorworld .p23-ucTag { background: #cf8228; }
+.p23-uc-cube       .p23-ucTag { background: #2875b8; }
+.p23-uc-management .p23-ucTag { background: #146b3f; }
+
+.p23-ucPerson {
+  margin-bottom: 12px;
+}
+
+.p23-ucPerson strong {
+  display: block;
+  font-size: 17px;
+  letter-spacing: -0.03em;
+}
+
+.p23-ucPerson span {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.p23-ucScene {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.p23-ucSteps {
+  margin: 0;
+  padding: 0 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.p23-ucSteps li {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* Connectivity Map */
+.p23-connTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.p23-connRow {
+  display: grid;
+  grid-template-columns: 220px 24px 200px 1fr;
+  align-items: center;
+  gap: 0;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.45);
+  transition: background 140ms ease;
+}
+
+.p23-connRow:last-child {
+  border-bottom: 0;
+}
+
+.p23-connRow:hover {
+  background: rgba(20,107,63,0.04);
+}
+
+.p23-connFrom {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.p23-connArrow {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.p23-connTo {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.p23-connLabel {
+  font-size: 13px;
+  color: var(--muted);
+  padding-left: 16px;
+  line-height: 1.4;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
 @media (max-width: 1180px) {
   .hero,
   .truthStrip,
@@ -536,12 +1069,39 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .navLinks {
+  .topbar {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .p23-hero,
+  .p23-sHead,
+  .p23-profiles,
+  .p23-flowLeaves {
+    grid-template-columns: 1fr;
+  }
+
+  .p23-heroAside {
     display: none;
   }
 
-  .topbar {
-    grid-template-columns: 1fr auto;
+  .p23-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .p23-ucGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .p23-connRow {
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .p23-connLabel {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    padding-top: 4px;
+    font-size: 12px;
   }
 }
 
